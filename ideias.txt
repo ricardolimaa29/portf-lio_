@@ -1,0 +1,54 @@
+sites de referencias ao nosso: 
+
+https://thainanprado.com.br/ 
+
+https://www.dins.com/ 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+preciso fazer o menu do site mais atrativo.(SANTANA)
+
+-Fontes(font-family, cor etc).  (JOÃO HENRIQUE)
+
+-Arruma o scroll pra baixo do site. 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+SITE PRECISA TER 4 PÁGINAS: 
+
+- MENU. (SANTANA)
+
+- SOBRE O PROJETO(fala sobre o projeto app. como que a gente fez etc.)  (PROCOMP)
+
+- SOBRE A NOSSA ESQUIPE DO PROJETO.  (PROCOMP)
+
+- SOBRE O CURSO DE PROGRAMAÇÃO DA PREFEITURA.  (SANTANA) 
+
+- CONTATO 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+COISAS PRINCIPAIS NO SITE: 
+
+- PRECISA ADICIONAR FOTO DO PROJETO 
+
+- FOTO DO NOSSO PROJETO 
+
+- FOTO DO NOSSO APP RODANDO 
+
+- ESCOLHER UMA COR PRINCIPAL DO SITE (!!!!!COR ESCURA E SOLIDA!!!!!!!)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+RASCUNHO::
+
+- font-family: "Kameron", Georgia, serif;    FONTE DO MENU DE CIMA DO SITE
+
+
+-font-family: Raleway; FONTE DA LETRAS DO SITE 
+
+
+
+
+
+
+
+
+
+
+
