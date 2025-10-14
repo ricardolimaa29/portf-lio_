@@ -1,4 +1,4 @@
-     /* ===== ESTILOS GERAIS ===== */
+  /* ===== ESTILOS GERAIS ===== */
         * {
             margin: 0;
             padding: 0;
@@ -321,16 +321,19 @@
         z-index: 100;
          }
          
-         .scroll-down-arrow {
-             display: block;
-             width: 30px;
-             height: 30px;
-             border-bottom: 3px solid white;
-             border-right: 3px solid white;
-             transform: rotate(45deg);
-             margin: -10px;
-             animation: bounce 2s infinite;
-         }
+  .scroll-down-arrow {
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-bottom: 4px solid #fff;
+      border-right: 4px solid #fff;
+      transform: rotate(45deg);
+      margin: 0 auto;
+      animation: bounce 2s infinite;
+      text-decoration: none;
+      outline: none;
+      -webkit-tap-highlight-color: transparent;
+  }
          
          .scroll-down-arrow:nth-child(2) {
              animation-delay: -0.2s;
@@ -342,7 +345,6 @@
          
          @keyframes bounce {
              0% {
-                 opacity: 0;
                  transform: rotate(45deg) translate(-10px, -10px);
              }
              50% {
@@ -353,4 +355,4 @@
                  transform: rotate(45deg) translate(10px, 10px);
              }
          }
-        
+         
