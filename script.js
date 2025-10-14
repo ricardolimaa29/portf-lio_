@@ -1,49 +1,68 @@
- // Header transparente -> sólido ao rolar
-window.addEventListener("scroll", () => {
-  const header = document.getElementById("header");
-  header.classList.toggle("scrolled", window.scrollY > 50);
-});
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+  const imgs = document.querySelectorAll('.team-card img');
 
-// Efeitos de aparecer ao rolar
-const faders = document.querySelectorAll(".fade-in, .fade-up");
+  imgs.forEach(img => {
+    // pega os caminhos exatamente como escritos no HTML (evita URLs absolutas)
+    const originalSrc = img.getAttribute('src');
+    // tenta primeiro dataset no próprio <img>, se não existir tenta no .team-card pai
+    const hoverSrc = img.dataset.hover || img.closest('.team-card')?.dataset?.hover;
 
-const appearOptions = {
-  threshold: 0.2,
-  rootMargin: "0px 0px -50px 0px"
-};
+    if (!hoverSrc) return; // se não tiver hover definido, pula
 
-const appearOnScroll = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add("appear");
-    observer.unobserve(entry.target);
-  });
-}, appearOptions);
- 
+    // pré-carrega a imagem de hover
+    const pre = new Image();
+    pre.src = hoverSrc;
 
+    // garante transição suave via JS caso CSS não tenha sido definido
+    img.style.transition = img.style.transition || 'opacity 0.35s ease, transform 0.35s ease';
+    img.style.willChange = 'opacity, transform';
 
-// Rolagem suave para cada seção ao clicar nos botões do menu
-document.querySelectorAll('.nav-menu a').forEach(function(link) {
-  link.addEventListener('click', function(e) {
-    const href = this.getAttribute('href');
-    if (href && href.startsWith('#')) {
+    let locked = false; // se true, mantém a imagem de hover (toggle via clique)
+    let showingHover = false;
+
+    const showHover = () => {
+      if (showingHover) return;
+      showingHover = true;
+      img.style.opacity = '0';
+      // espera a opacidade sumir, troca a src e reaparece
+      setTimeout(() => {
+        img.setAttribute('src', hoverSrc);
+        img.style.opacity = '1';
+      }, 220);
+    };
+
+    const hideHover = () => {
+      if (!showingHover) return;
+      showingHover = false;
+      img.style.opacity = '0';
+      setTimeout(() => {
+        img.setAttribute('src', originalSrc);
+        img.style.opacity = '1';
+      }, 220);
+    };
+
+    // hover (desktop)
+    img.addEventListener('mouseenter', () => {
+      showHover();
+    });
+
+    img.addEventListener('mouseleave', () => {
+      // se estiver "locked" por clique, não volta
+      if (!locked) hideHover();
+    });
+
+    // clique alterna estado (útil em mobile)
+    img.addEventListener('click', (e) => {
       e.preventDefault();
-      const target = document.querySelector(href);
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
+      locked = !locked;
+      if (locked) showHover();
+      else hideHover();
+    });
+
+    // toque rápido em mobile - mostra hover (não altera locked)
+    img.addEventListener('touchstart', () => {
+      showHover();
+    }, {passive: true});
   });
 });
-
-// Seta para baixo funcional
-const scrollDownBtn = document.querySelector('.scroll-down');
-if (scrollDownBtn) {
-  scrollDownBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    const target = document.querySelector('#sobre');
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-}
