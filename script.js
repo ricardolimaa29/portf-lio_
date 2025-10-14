@@ -1,4 +1,4 @@
-// Header transparente -> sólido ao rolar
+ // Header transparente -> sólido ao rolar
 window.addEventListener("scroll", () => {
   const header = document.getElementById("header");
   header.classList.toggle("scrolled", window.scrollY > 50);
@@ -21,16 +21,29 @@ const appearOnScroll = new IntersectionObserver((entries, observer) => {
 }, appearOptions);
  
 
- // Rolagem suave para as seções
-document.addEventListener('DOMContentLoaded', function() {
-    const scrollBtn = document.getElementById('scrollDown');
-    const contentSection = document.querySelector('.content');
-    if (scrollBtn && contentSection) {
-        scrollBtn.addEventListener('click', function() {
-            window.scrollTo({
-                top: contentSection.offsetTop,
-                behavior: 'smooth'
-            });
-        });
+
+// Rolagem suave para cada seção ao clicar nos botões do menu
+document.querySelectorAll('.nav-menu a').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+  });
 });
+
+// Seta para baixo funcional
+const scrollDownBtn = document.querySelector('.scroll-down');
+if (scrollDownBtn) {
+  scrollDownBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector('#sobre');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
