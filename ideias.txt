@@ -8,13 +8,6 @@ https://colorhunt.co/palette/02152603346e6eacdae2e2b6
 
 https://drive.google.com/drive/folders/14XeUdf_ZrVt8fIAHmBPF30ug0D8NefD2?hl=pt-br
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-preciso fazer o menu do site mais atrativo.(SANTANA)
-
--Fontes(font-family, cor etc).  (JOÃO HENRIQUE)
-
--Arruma o scroll pra baixo do site. 
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 SITE PRECISA TER 4 PÁGINAS: 
 
 - MENU. (SANTANA)
@@ -39,21 +32,6 @@ COISAS PRINCIPAIS NO SITE:
 
 - ESCOLHER UMA COR PRINCIPAL DO SITE (!!!!!COR ESCURA E SOLIDA!!!!!!!)
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-RASCUNHO::
-
-- font-family: "Kameron", Georgia, serif;    FONTE DO MENU DE CIMA DO SITE
-
-
--font-family: Raleway; FONTE DA LETRAS DO SITE 
-
-- CSS: TITULO DENTRO DO TEXTO 
-font-weight: bold;
-font-family: Arial, Helvetica, sans-serif;
-color: white; /* Porque o fundo é preto */
-font-size: 18px; /* tamanho aproximado */
-
-
-
 
 
 
