@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -6,33 +6,35 @@
   <title>Portifólio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header>
     <nav class="nav-menu">
       <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#">PROJETO</a></li>
-        <li><a href="#">ESQUIPE</a></li>
-        <li><a href="#">EMPRESA</a></li>
-        <li><a href="#">Contato</a></li>
-
+        <li><a href="#capa">Início</a></li>
+        <li><a href="#sobre">PROJETO</a></li>
+        <li><a href="#equipe">EQUIPE</a></li>
+        <li><a href="#professor">PROFESSOR</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-
+<section id = "capa">
     <div class="hero">
-      <h1 class="title">TechSolutions</h1>
-      <h2 class="subtitle">Inovando o futuro com tecnologia</h2>
+      <h1 class="title">PYACADEMY</h1>
+      <h1 class="subtitle">Inovando o futuro com tecnologia</h1>
     </div>
   </header>
- 
+</section>
+  <div id="scrollDown" class="scroll-down">
+    <span class="scroll-down-arrow"></span>
+  </div>
 
   <!-- ===== NOVA SEÇÃO ===== -->
- 
-<section id="sobre" class="about-section">
+  <section id="sobre" class="about-section">
     <div class="container">
         <h2>Sobre o Projeto</h2>
         <p>
-            A <strong>TechSolutions</strong> é um projeto desenvolvido em grupo com o objetivo de apresentar nosso aplicativo mobile desenvolvido com flet,
+            A <strong>PYACADEMY</strong> é um projeto desenvolvido em grupo com o objetivo de apresentar nosso aplicativo mobile desenvolvido com flet,
             durante o projeto colocamos em prática tudo o que aprendemos sobre programação,desenvolvimento de interfaces e trabalho em equipe.
             Queremos compartilhar nossa experiência e mostar como o aprendizado se transformou em um produto funcional e criativo!
         </p>
@@ -55,130 +57,181 @@
             </div>
         </div>
     </div>
-</section>
-<section class="team-section">
-  <h2>Conheça a Equipe</h2>
-  <div class="team-grid">
-    <!-- Membro 1 -->
-    <div class="team-card" data-hover="img/imagem2.jpeg">
-      <img src="img/imagem1.jpeg" data-hover="img/imagem2.jpeg" alt="Ricardo Lima">
-      <div class="info">
-        <h3>Ricardo Lima '25</h3>
-        <h4>Presidente, Matéria: TI</h4>
-        <p>O professor do grupo, sempre inovando e guiando a equipe com visão tecnológica e muita excelência.</p>
+  </section>
+
+  <section id="equipe" class="team-section">
+    <h2>Conheça a Equipe</h2>
+
+    <div class="team-grid">
+      <div class="team-card" data-hover="img\julia.jpg">
+        <img src="img/julia1.jpg" data-hover="img\julia2.jpg" alt="Julia Mendes">
+        <div class="info">
+          <h3>Julia Mendes</h3>
+          <h4>Desenvolvedora</h4>
+          <p>Responsavel por desenvolver a logo do app.</p>
+        </div>
       </div>
+
+      <div class="team-card">
+        <img src="img/anaclara.jpg"  alt="Ana Clara"> 
+        <div class="info">
+          <h3>Ana Clara Mendes</h3>
+          <h4>Front-end Developer</h4>
+          <p>Responsavel pelas telas de cadastro e perfil do app.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <img src="img/santana2.jpg" alt="Victor Santana">
+        <div class="info">
+          <h3>Victor Santana</h3>
+          <h4>Desenvolvedor</h4> 
+          <p>Responsável pelo desenvolvimento do menu. </p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <img src="img/arthur.jpg" alt="Arthur Rosa">
+        <div class="info">
+          <h3>Arthur Rosa</h3>
+          <h4>Desenvolvedor</h4>
+          <p>Responsavel pelas telas de notificação e login do app.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <img src="img/marcela3.jpg" alt="Marcela">
+        <div class="info">
+          <h3>Marcella Rosa</h3>
+          <h4>Desenvolvedora</h4>
+          <p>Responsável pelo desenvolvimento das telas home e o desempenho.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <img src="img/jesus2.jpg" alt="Marcos Jesus">
+        <div class="info">
+          <h3>Marcos Jesus</h3>
+          <h4>Suporte Técnico</h4>
+          <p>Responsavel pelo suporte de materiais. </p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <img src="img/vitor.jpg" alt="Vitor Procópio">
+        <div class="info">
+          <h3>Vitor Procópio</h3>
+          <h4>Suporte Técnico</h4>
+          <p>Responsavel pelo suporte e material de aula.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <img src="img/analuiza.JPG" alt="Ana Luiza">
+        <div class="info">
+          <h3>Ana Luiza</h3>
+          <h4>Front-end Developer</h4>
+          <p>Responsável pelo desenvolvimento e design visual e interativo do site.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <img src="img/joao1.jpg" alt="João Henrique">
+        <div class="info">
+          <h3>João Henrique</h3>
+          <h4>Desenvolvedor</h4>
+          <p>Responsavel por desenvolver as telas de login e notificação do app.</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <img src="img/kauã.jpg" alt="Kauã Pierre">
+        <div class="info">
+          <h3>Kauã Pierre</h3>
+          <h4>Desenvolvedor</h4>
+          <p>Responsavel por desenvolver telas de login e notificação do app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="professor" class="course-section">
+    <div class="course-container">
+      <div class="course-image">
+        <img src="img/ricardo3.JPG" alt="Professor">
+      </div>
+      <div class="course-content">
+        <h2>Ricardo Rodrigues Lima</h2>
+        <p>
+          Nosso professor Ricardo foi o maior responsável por esse projeto se desenvolver,ele que nos ensinou tudo que sabemos hoje
+          nosso maior exemplo é ele,um professor paciente dedicado e que exerce seu trabalho com muito amor e excelência. 
+        </p>
+        <p>
+          Obrigada professor Ricardo por todo apoio e dedicação com nossa turma e todos os seus alunos,sempre acreditou e nos deu todo o apoio
+          que precisavamos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+ <section id="contato" class="course-section">
+  <h2>Contatos dos Alunos</h2>
+  <div class="contatos-grid">
+
+    <div class="contato-card">
+      <h3>Julia Mendes</h3>
+      <p>📞 <a href="https://wa.me/5511994996511" target="_blank">+55 (11) 99499-6511</a></p>
     </div>
 
-    <!-- Membro 2 -->
-    <div class="team-card" data-hover="img/imagem1.jpeg">
-      <img src="img/imagem2.jpeg" data-hover="img/imagem1.jpeg" alt="Kenich Charo">
-      <div class="info">
-        <h3>Kenich Charo '27</h3>
-        <h4>Media Director, Tester</h4>
-        <p>Especialista em design e mídia, garantindo que todos os projetos tenham qualidade visual e técnica.</p>
-      </div>
+    <div class="contato-card">
+      <h3>Ana Clara Mendes</h3>
+      <p>📞 <a href="https://wa.me/55119767623289" target="_blank">+55 (11) 97672-3289</a></p>
     </div>
 
-    <!-- Membro 3 -->
-    <div class="team-card" data-hover="img/imagem4.jpeg">
-      <img src="img/imagem3.jpeg" data-hover="img/imagem4.jpeg" alt="Victor Santana">
-      <div class="info">
-        <h3>Victor Santana</h3>
-        <h4>Desenvolvedor</h4>
-        <p>Responsável pelo código e integração do aplicativo, sempre garantindo alto desempenho.</p>
-      </div>
+    <div class="contato-card">
+      <h3>Victor Santana</h3>
+      <p>📞 <a href="https://wa.me/5511972671539" target="_blank">+55 (11) 97267-1539</a></p>
     </div>
 
-    <!-- Membro 4 -->
-    <div class="team-card" data-hover="img/imagem3.jpeg">
-      <img src="img/imagem4.jpeg" data-hover="img/imagem3.jpeg" alt="Arthur Rosa">
-      <div class="info">
-        <h3>Arthur Rosa</h3>
-        <h4>UX Designer</h4>
-        <p>Cuida da experiência do usuário, transformando ideias em interfaces intuitivas.</p>
-      </div>
+    <div class="contato-card">
+      <h3>Arthur Rosa</h3>
+      <p>📞 <a href="https://wa.me/5511964863584" target="_blank">+55 (11) 96486-3584</a></p>
     </div>
 
-    <!-- Membro 5 -->
-    <div class="team-card" data-hover="img/imagem6.jpeg">
-      <img src="img/imagem5.jpeg" data-hover="img/imagem6.jpeg" alt="Kauã">
-      <div class="info">
-        <h3>Kauã</h3>
-        <h4>Tester</h4>
-        <p>Responsável pelos testes e controle de qualidade do projeto.</p>
-      </div>
+    <div class="contato-card">
+      <h3>Marcella Rosa</h3>
+      <p>📞 <a href="https://wa.me/5511918603041" target="_blank">+55 (11) 91860-3041</a></p>
     </div>
 
-    <!-- Membro 6 -->
-    <div class="team-card" data-hover="img/imagem5.jpeg">
-      <img src="img/imagem6.jpeg" data-hover="img/imagem5.jpeg" alt="Marcos Jesus">
-      <div class="info">
-        <h3>Marcos Jesus</h3>
-        <h4>Suporte Técnico</h4>
-        <p>Auxilia na manutenção e suporte técnico das aplicações criadas.</p>
-      </div>
+    <div class="contato-card">
+      <h3>Marcos Jesus</h3>
+      <p>📞 <a href="https://wa.me/5511953029691" target="_blank">+55 (11) 95302-9691</a></p>
     </div>
 
-    <!-- Membro 7 -->
-    <div class="team-card" data-hover="img/imagem8.jpeg">
-      <img src="img/imagem7.jpeg" data-hover="img/imagem8.jpeg" alt="Vitor Procópio">
-      <div class="info">
-        <h3>Vitor Procópio</h3>
-        <h4>Analista de Dados</h4>
-        <p>Analisa e interpreta dados para orientar as decisões do grupo.</p>
-      </div>
+    <div class="contato-card">
+      <h3>Vitor Procópio</h3>
+      <p>📞 <a href="https://wa.me/5511943568631" target="_blank">+55 (11) 94356-8631</a></p>
     </div>
 
-    <!-- Membro 8 -->
-    <div class="team-card" data-hover="img/imagem7.jpeg">
-      <img src="img/imagem8.jpeg" data-hover="img/imagem7.jpeg" alt="Ana Luiza">
-      <div class="info">
-        <h3>Ana Luiza</h3>
-        <h4>Front-end Developer</h4>
-        <p>Responsável pelo design visual e interativo do aplicativo.</p>
-      </div>
+    <div class="contato-card">
+      <h3>Ana Luiza Castilho</h3>
+      <p>📞 <a href="https://wa.me/5511973551544" target="_blank">+55 (11) 97355-1544</a></p>
     </div>
 
-    <!-- Membro 9 -->
-    <div class="team-card" data-hover="img/imagem10.jpeg">
-      <img src="img/imagem9.jpeg" data-hover="img/imagem10.jpeg" alt="Nan">
-      <div class="info">
-        <h3>Nan</h3>
-        <h4>Documentação</h4>
-        <p>Organiza e documenta todas as etapas do desenvolvimento.</p>
-      </div>
+    <div class="contato-card">
+      <h3>João Henrique</h3>
+      <p>📞 <a href="https://wa.me/5511911206829" target="_blank">+55 (11) 91120-6829</a></p>
     </div>
 
-    <!-- Membro 10 -->
-    <div class="team-card" data-hover="img/imagem9.jpeg">
-      <img src="img/imagem10.jpeg" data-hover="img/imagem9.jpeg" alt="Abe Grigory">
-      <div class="info">
-        <h3>Abe Grigory</h3>
-        <h4>Business Manager</h4>
-        <p>Gerencia a logística e finanças do projeto, mantendo a equipe organizada e produtiva.</p>
-      </div>
+    <div class="contato-card">
+      <h3>Kauã Pierre</h3>
+      <p>📞 <a href="https://wa.me/5511968406045" target="_blank">+55 (11) 96840-6045</a></p>
     </div>
+
   </div>
 </section>
 
-        
-<section class="course-section">
-  <div class="course-container">
-    <div class="course-image">
-      <img src="img/ana.jpg" alt="Instrutor do Curso">
-    </div>
-    <div class="course-content">
-      <h2>Sobre o Curso de Programação</h2>
-      <p>
-        Nosso curso de programação é voltado para iniciantes e entusiastas da tecnologia que desejam dar os primeiros passos no desenvolvimento de software.
-        Com uma abordagem prática e atualizada, você aprenderá desde os fundamentos da lógica até a construção de projetos completos com as tecnologias mais usadas do mercado.
-      </p>
-      <p>
-        Não importa se você nunca escreveu uma linha de código — aqui é o lugar certo para começar a construir seu futuro na área tech!
-      </p>
-    </div>
-  </div>
-</section>
-<script src="script.js" defer></script>
+  <!-- script adicionado -->
+  <script src="script.js"></script>
 </body>
 </html>
