@@ -1,3 +1,41 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const buttons = document.querySelectorAll('button, .nav-menu a');
+
+  buttons.forEach(btn => {
+    // animação ao passar o mouse
+    btn.addEventListener('mouseenter', () => {
+      btn.style.transition = 'all 0.3s ease';
+      btn.style.transform = 'scale(1.08)';
+      btn.style.boxShadow = '0 0 10px rgba(0, 255, 255, 0.6)';
+    });
+
+    // quando sai do botão
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = 'scale(1)';
+      btn.style.boxShadow = 'none';
+    });
+
+    // efeito rápido ao clicar
+    btn.addEventListener('click', (e) => {
+      e.preventDefault(); // evita scroll instantâneo
+      const target = btn.getAttribute('href');
+      if(target && target.startsWith('#')){
+        document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+      }
+      btn.style.boxShadow = '0 0 15px rgba(255, 255, 255, 0.8)';
+      setTimeout(() => {
+        btn.style.boxShadow = 'none';
+      }, 200);
+    });
+  });
+
+  // Scroll seta para baixo
+  const scrollDown = document.getElementById('scrollDown');
+  scrollDown.addEventListener('click', () => {
+    document.querySelector('.about-section').scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
   const imgs = document.querySelectorAll('.team-card img');
