@@ -118,7 +118,7 @@ h3 {
 .about-section h2 {
     text-align: center;
     font-size: 3rem;
-    color: #c7c7c7;
+    color: #fffefe;
     margin-bottom: 20px;
     text-shadow: 0 0 10px #8b8b8b;
 }
@@ -129,7 +129,7 @@ h3 {
     margin: 0 auto 60px;
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #b6b6b6;
+    color: #e2e2e2;
 }
 
 .about-grid {
@@ -173,7 +173,7 @@ h3 {
 
 .about-card p {
     font-size: 1rem;
-    color: #b0bec5;
+    color: #e2e2e2;
 }
 
 /* ===== ESTILO DA SEGUNDA PÁGINA(EQUIPE) ===== */
@@ -222,7 +222,7 @@ h3 {
 }
 
 .info h4 {
-    color: #666;
+    color: #f0f0f0;
     font-weight: normal;
     font-size: 0.9rem;
     margin-bottom: 10px;
@@ -230,7 +230,7 @@ h3 {
 
 .info p {
     font-size: 0.85rem;
-    color: #444;
+    color: #fffefe;
 }
 
 /* ===== ESTILO DA PAGINA 4(SOBRE A FABRICA PROGRAMADORES) ===== */
@@ -255,7 +255,7 @@ h3 {
 }
 
 .course-image img {
-    width: 100%;
+    width: 60%;
     border-radius: 20px; /* antes 15px */
     box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2); /* sombra mais forte */
     object-fit: cover;
@@ -263,7 +263,7 @@ h3 {
 
 .course-content {
     flex: 2 1 500px;
-    color: #cccccc;
+    color: #e2e2e2;
     text-align: left;
 }
 
